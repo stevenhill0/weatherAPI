@@ -23,3 +23,21 @@ const weatherData = async () => {
 };
 
 weatherData();
+
+const iss = async () => {
+  const data = 'http://api.open-notify.org/iss-now.json';
+  const issData = await fetch(data);
+  const issObject = await issData.json();
+
+  const {
+    iss_position: { latitude, longitude },
+  } = issObject;
+
+  const lat = document.getElementById('latitude');
+  const long = document.getElementById('longitude');
+
+  lat.innerHTML = `Latitude: ${latitude}`;
+  long.innerHTML = `Longitude:  ${longitude}`;
+};
+
+setInterval(iss, 1000);
