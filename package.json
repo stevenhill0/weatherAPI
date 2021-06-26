@@ -1,0 +1,14 @@
+{
+  "name": "weatherapi",
+  "version": "1.0.0",
+  "description": "Weather API testing",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Steven Hill",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^7.29.0"
+  }
+}
